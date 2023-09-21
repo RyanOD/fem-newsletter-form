@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    background-color: rgb(42, 42, 42);
+    font-family: Roboto;
+    color: #242742;
+    margin-top: 40px;
+}
+
+.main{
+    box-sizing: border-box;
+    border-radius: 36px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 928px;
+    padding: 23px;
+    margin: auto;
+}
+
+.copy{
+    width: 400px;
+}
+
+h1{
+    font-size: 56px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+p{
+    font-size: 16px;
+    margin: 30px 0;
+    line-height: 150%;
+}
+
+ul {
+    margin: 20px 0 40px 0;
+}
+
+li {
+    font-size: 16px;
+    margin: 10px 0;
+    list-style-image: url("assets/images/icon-list.svg");
+    list-style-position: inside;
+}
+
+form.newsletter input{
+    display: block;
+}
+
+form.newsletter label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.image-desktop{
+    max-width: 100%;
+}
+
+@media(max-width: 505px) {
+    .image-desktop {
+        display: none;
+    }
+    .main {
+        flex-wrap: wrap-reverse;
+        border-radius: 0;
+        padding: 0;
+    }
+}
+
+@media(min-width: 505px) {
+    .image-mobile {
+        display: none;
+    }
+}
+
+input {
+    height: 56px;
+    width: 376px;
+    border-radius: 8px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.email {
+    border-color: RGBA(25, 24, 43, 0.25);
+    margin: 5px 0;
+}
+
+.submit {
+    background-color: #242742;
+    color: #fff;
+    margin: 20px 0;
+    border: none;
+}
